@@ -565,6 +565,7 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding: 15px 16px;
+    color: var(--main-white-color);
     background-color: transparent;
     outline: transparent;
 }
@@ -840,6 +841,9 @@ img {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
+.modal-coment {
+    margin-bottom: 20px;
+}
 .input-wrap {
     position: relative;
 }
@@ -848,6 +852,17 @@ img {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+}
+.modal-check {
+    margin-bottom: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.input-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .check-text {
     font-style: normal;
@@ -874,13 +889,13 @@ img {
 .check-icon {
     fill: transparent;
 }
+.input-check:focus span {
+    border-color: var(--accent-color);
+}
 .input-check:checked+.check-text span {
     background-color: var(--accent-color);
     border: none;
 }
 .input-check:checked+.check-text .check-icon {
     fill:var(--main-white-color);
-}
-.input-check:focus span {
-    border-color: var(--accent-color);
 }
