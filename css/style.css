@@ -907,13 +907,13 @@ img {
 .input-check:checked+.check-text .check-icon {
     fill:var(--main-white-color);
 } 
-.check-text span:focus,
+
 .check-text span:hover {
     border-color: var(--accent-color);
     outline: none;
 }
-.input-check:focus {
+.input-check:focus+.check-text span {
     border-color: var(--accent-color);
-    outline: none;
+    outline: transparent;
 }
 
